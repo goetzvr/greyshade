@@ -1,4 +1,4 @@
-.post{
+.post, .linklog{
 	h1.title, .entry-content{
 		margin-left: 200px;
 		@media screen and (max-width: 800px){
@@ -21,7 +21,7 @@
 			@include link-colors($color-gray02, $color-gray01);
 			@include transition(0.3s);
 		}
-		.date, .tags, .comments{
+		.date, .tags, .author, .comments{
 			padding-left: 30px;
 			position: relative;
 			&:before{
@@ -38,6 +38,7 @@
 		}
 		.date:before{content: "\f073";}
 		.tags:before{content: "\f02c";}
+		.author:before{content: "\f007";}
 		.comments:before{content: "\f075";}
 	}
 }
