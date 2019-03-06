@@ -22,3 +22,6 @@ line_comments = false
 # preferred_syntax = :sass
 # and then run:sass-convert -R --from scs
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+#
+#
+# /home/gvr/.gem/ruby/2.6.0/bin/compass compile

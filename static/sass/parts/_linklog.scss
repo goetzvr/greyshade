@@ -1,10 +1,12 @@
-.post {
-	h1.title, .entry-content{
+.linklog{
+	h1.title, .entry-content {
+		font-size: 1.0em;
 		margin-left: 200px;
 		@media screen and (max-width: 800px){
 			margin-left: 0;
 		}
 	}
+
 	.meta{
 		position: absolute;
 		top: 85px;
@@ -17,13 +19,16 @@
 			position: static;
 			width: auto;
 		}
+
 		a{
 			@include link-colors($color-gray02, $color-gray01);
 			@include transition(0.3s);
 		}
+
 		.date, .tags, .author, .comments{
 			padding-left: 30px;
 			position: relative;
+
 			&:before{
 				color: $color-gray03;
 				font: 1.3em $font-icon;
@@ -31,14 +36,17 @@
 				position: absolute;
 				left: 0;
 			}
+
 			@media screen and (max-width: 800px){
 				@include inline-block;
 				margin-right: 30px;
 			}
 		}
+
 		.date:before{content: "\f073";}
 		.tags:before{content: "\f02c";}
 		.author:before{content: "\f007";}
 		.comments:before{content: "\f075";}
+		.linklog.title:before{content: "\f08e";}
 	}
 }
